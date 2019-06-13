@@ -84,8 +84,7 @@ if __name__=='__main__':
               'game_record_filename':getattr(args,'game_record_filename'),
               'prob_mod':getattr(args,'prob_mod')}
 
-    # machikoro.py will be run in Pycharm GUI(right-click script in the editor, and choose "run"), so you need to set
-    # some kwargs mannually according to your need.
+    # machikoro.py will be run in Pycharm GUI(right-click script in the editor, and choose "run"), so you need to set some kwargs mannually according to your need.
     kwargs['use_max_probability'] = True
     kwargs['load'] = False
 

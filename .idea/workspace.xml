@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9a37284c-ef70-4589-9378-b6b39ca136d4" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/machikoro.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1140">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="e#60#70#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/player.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-60">
+              <caret line="203" lean-forward="true" selection-start-line="203" selection-end-line="203" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+                <element signature="e#473#1296#0" />
+                <element signature="e#1374#2568#0" />
+                <element signature="e#3118#3615#0" />
+                <element signature="e#3664#3853#0" />
+                <element signature="e#3900#4688#0" />
+                <element signature="e#4746#6100#0" />
+                <element signature="e#6151#7118#0" />
+                <element signature="e#7151#7867#0" />
+                <element signature="e#7919#7965#0" />
+                <element signature="e#8005#8451#0" />
+                <element signature="e#8495#8697#0" />
+                <element signature="e#8732#10558#0" />
+                <element signature="e#10595#10902#0" />
+                <element signature="e#10941#11565#0" />
+                <element signature="e#11603#11917#0" />
+                <element signature="e#11954#12304#0" />
+                <element signature="e#12341#12512#0" />
+                <element signature="e#12553#14488#0" />
+                <element signature="e#14530#16943#0" />
+                <element signature="e#16987#17870#0" />
+                <element signature="e#17911#18358#0" />
+                <element signature="e#18397#18618#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/player_ai.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2400">
+              <caret line="165" column="8" lean-forward="true" selection-start-line="165" selection-start-column="8" selection-end-line="165" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+                <element signature="e#405#1741#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/machikoro.py" />
+        <option value="$PROJECT_DIR$/player.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="230" />
+    <option name="y" value="-1079" />
+    <option name="width" value="1688" />
+    <option name="height" value="1075" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="machi_ai_py3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="machi_ai_py3" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9a37284c-ef70-4589-9378-b6b39ca136d4" name="Default Changelist" comment="" />
+      <created>1560434218793</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560434218793</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="230" y="-1079" width="1688" height="1075" extended-state="0" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17696969" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3481953" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/player_ai.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2400">
+          <caret line="165" column="8" lean-forward="true" selection-start-line="165" selection-start-column="8" selection-end-line="165" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+            <element signature="e#405#1741#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="203" lean-forward="true" selection-start-line="203" selection-end-line="203" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#473#1296#0" />
+            <element signature="e#1374#2568#0" />
+            <element signature="e#3118#3615#0" />
+            <element signature="e#3664#3853#0" />
+            <element signature="e#3900#4688#0" />
+            <element signature="e#4746#6100#0" />
+            <element signature="e#6151#7118#0" />
+            <element signature="e#7151#7867#0" />
+            <element signature="e#7919#7965#0" />
+            <element signature="e#8005#8451#0" />
+            <element signature="e#8495#8697#0" />
+            <element signature="e#8732#10558#0" />
+            <element signature="e#10595#10902#0" />
+            <element signature="e#10941#11565#0" />
+            <element signature="e#11603#11917#0" />
+            <element signature="e#11954#12304#0" />
+            <element signature="e#12341#12512#0" />
+            <element signature="e#12553#14488#0" />
+            <element signature="e#14530#16943#0" />
+            <element signature="e#16987#17870#0" />
+            <element signature="e#17911#18358#0" />
+            <element signature="e#18397#18618#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machikoro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1140">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#60#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

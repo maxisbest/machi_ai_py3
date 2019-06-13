@@ -320,7 +320,6 @@ class Player(object):
         self.swap_self_building = (choice % 12)
         self.AI.record_swap()
 
-
     def decide_buy(self):
         self.create_buy_mask()
         probs = self.AI.eval_buy()
@@ -328,14 +327,14 @@ class Player(object):
         self.AI.record_buy()
 
     def calculate_green(self):
-        if self.roll_value in [2,3]:
-            val = self.buildings['bakery']
+        if self.roll_value in [2,3]: #面包房, 每个面包房赚1个金币
+            val = self.buildings['bakery'] #自己面包房的个数
             if self.buildings['shopping_mall'] ==1:
                 val = 2 * val
             if self.game.record_game and val > 0:
                 self.game.game_record_file.write('BAKERY: player %d receives %d coins (now has %d)\n' % (self.order, val, self.coins + val))
             return val
-        if self.roll_value == 4:
+        if self.roll_value == 4: # 便利店, 每个便利店赚3个金币
             val = self.buildings['convenience_store']
             if self.buildings['shopping_mall'] ==1:
                 val = 4 * val
@@ -344,19 +343,19 @@ class Player(object):
             if self.game.record_game and val > 0:
                 self.game.game_record_file.write('CONVENIENCE STORE: player %d receives %d coins (now has %d)\n' % (self.order, val, self.coins + val))
             return val
-        if self.roll_value == 7:
+        if self.roll_value == 7:  # 奶酪工厂, n*3*num_ranch
             val = 3 * self.buildings['cheese_factory'] * self.buildings['ranch']
             if self.game.record_game and val > 0:
                 self.game.game_record_file.write('RANCH: player %d receives %d coins (now has %d)\n' % (self.order, val, self.coins + val ))
             return val
-        if self.roll_value == 8:
+        if self.roll_value == 8: # 家具工厂, n*3*(林场数+矿场数)
             val = 3 * self.buildings['furniture_factory'] * \
                   (self.buildings['mine'] + self.buildings['forest'])
             if self.game.record_game and val > 0:
                 self.game.game_record_file.write('FURNITURE FACTORY: player %d receives %d coins (now has %d)\n' % (self.order, val, self.coins + val ))
             return val
-        if self.roll_value in [11, 12]:
-            val = 2 * self.buildings['fruit&veg_market'] * (self.buildings['wheat_field'] + self.buildings['apple_orchard'])
+        if self.roll_value in [11, 12]: #果蔬超市, n*3*(麦田+果园), mcandocia这里用2*的; McAndocia made a mistake here, he uses 2 but should be 3.
+            val = 3 * self.buildings['fruit&veg_market'] * (self.buildings['wheat_field'] + self.buildings['apple_orchard'])
             if self.game.record_game and val > 0:
                 self.game.game_record_file.write('FRUIT&VEG MARKET: player %d receives %d coins (now has %d)\n' % (self.order, val, self.coins + val ))
             return val
@@ -376,7 +375,7 @@ class Player(object):
                     self.game.game_record_file.write('STADIUM: player %d (now has %d) receives %d coins from player %d (now has %d)\n' %
                                                      (self.order, self.coins, coins_to_steal, target_player.order, target_player.coins))
 
-        #decide from whombst to steal
+        #decide from whom to steal
         if self.buildings['tv_station']:
             self.decide_steal()
             self.AI.record_steal()
@@ -409,8 +408,6 @@ class Player(object):
 
         return 0
 
-
-
     def create_swap_mask(self):
         """
         this determines which actions are allowed
@@ -436,11 +433,11 @@ class Player(object):
         mask = [1] * 20
         for i in range(19):
             if self.coins < building_cost[BUILDING_ORDER[i]]:
-                mask[i] = 0
+                mask[i] = 0 # unfordable, so 0.
             elif self.game.building_supply[BUILDING_ORDER[i]] == 0:
-                mask[i] = 0
+                mask[i] = 0 # no supply, so 0.
             elif self.buildings[BUILDING_ORDER[i]] == player_limit[BUILDING_ORDER[i]]:
-                mask[i] = 0
+                mask[i] = 0 # reached the limit, so zero.
         self.buy_mask = mask
 
 
