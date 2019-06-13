@@ -10,3 +10,10 @@ Here are a couple articles I wrote about the results:
 * [General Insights](http://maxcandocia.com/article/2017/Jul/22/using-neural-networks-to-play-board-games/)
 
 * [Strategy Extraction](http://maxcandocia.com/article/2017/Jul/30/using-ai-for-machi-koro-strategy/)
+
+## A reminder
+* This fork is for beginners who have not much experience in python.
+* Pycharm IDE is recommended.
+* The project can be run under Python 3.6 and tensorflow 1.13.1. Other version of Python3 and Tensorflow should work.
+* McAndocia uses the number of turns in an episode to measure the AI's strength. It may have better performance metrics. 
+* Althought the train will converge at 60 turns per episode, a human can beat the AI easily with cheese-factory strategy.
