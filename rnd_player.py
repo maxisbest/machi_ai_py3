@@ -34,7 +34,7 @@ class RndPlayer(Player):
             self.game.game_record_file.write(msg)
             print(msg, end='')
 
-           self.AI.shared.dice_history = []
+            self.AI.shared.dice_history = []
             self.AI.shared.dice_history_turn = []
             self.AI.shared.buy_history = []
             self.AI.shared.buy_history_turn = []
@@ -108,5 +108,3 @@ class RndPlayer(Player):
 
         """this returns the complete and sufficient game state based on the player whose turn it is"""
         return reduce(list.__add__, [self.get_next_player(offset).serialize_data() for offset in range(4)])
-
-
