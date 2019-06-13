@@ -38,8 +38,11 @@ def main(*args, **kwargs):
             for i in range(50):
                 new_game = Game(1 + i + 50*j + 10*50*k, players, options=kwargs)
                 new_game.run(silent=(not verbose))
+                # a hint for you when you are waiting.
+                print(f"game {1 + i + 50*j + 10*50*k} finished with {new_game.turn} turns.")
                 current_cycle.append(new_game.turn)
             sys.stdout.write(' '*30 + '\r')
+            print(f'The last 50 games have mean turns of {np.mean(current_cycle)}')
             new_game.train_players()
         new_game.flush_player_history()
         if USE_SHARED:
@@ -80,5 +83,12 @@ if __name__=='__main__':
               'shared_ai':getattr(args, 'shared_ai'),
               'game_record_filename':getattr(args,'game_record_filename'),
               'prob_mod':getattr(args,'prob_mod')}
+
+    # machikoro.py will be run in Pycharm GUI(right-click script in the editor, and choose "run"), so you need to set
+    # some kwargs mannually according to your need.
+    kwargs['use_max_probability'] = True
+    kwargs['load'] = False
+
     print(kwargs)
+
     main(**kwargs)
