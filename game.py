@@ -1,4 +1,6 @@
-from player import Player 
+#from __future__ import *
+
+from player import Player
 from constants import * 
 
 from copy import deepcopy
@@ -13,7 +15,7 @@ import os
 
 class Game(object):
 	def __init__(self, id, pre_existing_players = None, name='', options=None):
-		if 'full_record' in options and options['full_record'] <> '':
+		if 'full_record' in options and options['full_record'] != '':
 			self.full_record = True 
 			if not os.path.exists(options['full_record']):
 				with open(options['full_record'],'w') as f:
@@ -45,7 +47,7 @@ class Game(object):
 		self.turn = 0
 		if 'game_record_filename' not in options:
 			self.record_game=False
-		elif options['game_record_filename'] <> '':
+		elif options['game_record_filename'] != '':
 			self.record_game = True
 			self.game_record_file = open(options['game_record_filename'], 'a')
 		else:
@@ -55,7 +57,7 @@ class Game(object):
 
 	def run(self, silent=False):
 		if not silent:
-			print 'Beginning game #%s' % self.id 
+			print('Beginning game #%s' % self.id)
 		if self.record_game:
 			self.game_record_file.write('---BEGIN GAME %s---\n' % self.id)
 		current_player = self.players[0]
@@ -73,11 +75,11 @@ class Game(object):
 			else:
 				current_player = self.get_next_player(current_player)
 			if self.turn % 200 == 0 and not silent:
-				print 'turn %s' % self.turn
+				print('turn %s' % self.turn)
 				for player in self.players:
-					print player.coins
+					print(player.coins)
 		if not silent:
-			print 'Player %d, order %d won in %d turns' % (current_player.id, current_player.order, self.turn) 
+			print('Player %d, order %d won in %d turns' % (current_player.id, current_player.order, self.turn))
 		self.completed=True
 		if self.record_game:
 			self.game_record_file.write('Player %d, order %d won in %d turns\n' % (current_player.id, current_player.order, self.turn) )
@@ -141,8 +143,8 @@ class Game(object):
 		if roll_value==3:
 			for i in range(1,4):
 				target_player = self.get_next_player(player,i)
-				biz_cost = target_player.buildings.cafe 
-				if target_player.buildings.shopping_mall:
+				biz_cost = target_player.buildings['cafe']
+				if target_player.buildings['shopping_mall']:
 					biz_cost = biz_cost * 2
 				final_cost = min(biz_cost, max_amount)
 				
@@ -156,8 +158,8 @@ class Game(object):
 		else:
 			for i in range(1,4):
 				target_player = self.get_next_player(player,i)
-				biz_cost = target_player.buildings.family_restaurant 
-				if target_player.buildings.shopping_mall:
+				biz_cost = target_player.buildings['family_restaurant']
+				if target_player.buildings['shopping_mall']:
 					biz_cost = biz_cost * 3
 				else:
 					biz_cost = biz_cost * 2
@@ -179,24 +181,24 @@ class Game(object):
 			return 0 
 		for target_player in self.players:
 			if roll_value==1:
-				target_player.coins += target_player.buildings.wheat_field 
-				if self.record_game and target_player.buildings.wheat_field > 0:
+				target_player.coins += target_player.buildings['wheat_field']
+				if self.record_game and target_player.buildings['wheat_field'] > 0:
 					self.game_record_file.write("WHEAT FIELD: player %d gets %d coins (now has %d)\n" % (target_player.order, target_player.buildings.wheat_field, target_player.coins))
 			elif roll_value==2:
-				target_player.coins += target_player.buildings.ranch
-				if self.record_game and target_player.buildings.ranch > 0:
+				target_player.coins += target_player.buildings['ranch']
+				if self.record_game and target_player.buildings['ranch'] > 0:
 					self.game_record_file.write("RANCH: player %d gets %d coins (now has %d)\n" % (target_player.order, target_player.buildings.ranch, target_player.coins))
 			elif roll_value==5:
-				target_player.coins += target_player.buildings.forest
-				if self.record_game and target_player.buildings.forest> 0:
+				target_player.coins += target_player.buildings['forest']
+				if self.record_game and target_player.buildings['forest']> 0:
 					self.game_record_file.write("FOREST: player %d gets %d coins (now has %d)\n" % (target_player.order, target_player.buildings.forest, target_player.coins))
 			elif roll_value==9:
-				target_player.coins += target_player.buildings.mine * 5
-				if self.record_game and target_player.buildings.mine > 0:
+				target_player.coins += target_player.buildings['mine'] * 5
+				if self.record_game and target_player.buildings['mine'] > 0:
 					self.game_record_file.write("MINE: player %d gets %d coins (now has %d)\n" % (target_player.order, target_player.buildings.mine*5, target_player.coins))
 			else:#10
-				target_player.coins += target_player.buildings.apple_orchard * 3
-				if self.record_game and target_player.buildings.apple_orchard > 0:
+				target_player.coins += target_player.buildings['apple_orchard'] * 3
+				if self.record_game and target_player.buildings['apple_orchard'] > 0:
 					self.game_record_file.write("APPLE ORCHARD: player %d gets %d coins (now has %d)\n" % (target_player.order, target_player.buildings.mine*3, target_player.coins))
 
 		return 0 

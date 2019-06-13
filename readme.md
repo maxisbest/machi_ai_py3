@@ -10,4 +10,3 @@ Here are a couple articles I wrote about the results:
 * [General Insights](http://maxcandocia.com/article/2017/Jul/22/using-neural-networks-to-play-board-games/)
 
 * [Strategy Extraction](http://maxcandocia.com/article/2017/Jul/30/using-ai-for-machi-koro-strategy/)
-

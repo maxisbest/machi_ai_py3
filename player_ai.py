@@ -82,28 +82,28 @@ class PlayerAI(object):
 			player = self.shared
 		else:
 			player = self.player
-		if len(player.dice_history) <> 0:
+		if len(player.dice_history) != 0:
 			dice_x = np.asarray(player.dice_history)[:,0,:] 
 			#print dice_x.shape
 			dice_y = keras.utils.to_categorical(player.dice_history_win, 2)
 			self.dice_ai.fit(dice_x, dice_y, epochs = 10, batch_size = 100, verbose=0)
 
-		if len(player.swap_history) <> 0:
+		if len(player.swap_history) != 0:
 			swap_x = np.asarray(player.swap_history)[:,0,:] 
 			swap_y = keras.utils.to_categorical(player.swap_history_win, 2)
 			self.swap_ai.fit(swap_x, swap_y, epochs = 10, batch_size = 100, verbose=0)
 
-		if len(player.reroll_history) <> 0:
+		if len(player.reroll_history) != 0:
 			reroll_x = np.asarray(player.reroll_history)[:,0,:] 
 			reroll_y = keras.utils.to_categorical(player.reroll_history_win, 2)
 			self.reroll_ai.fit(reroll_x, reroll_y, epochs = 10, batch_size = 100, verbose=0)
 
-		if len(player.buy_history) <> 0:
+		if len(player.buy_history) != 0:
 			buy_x = np.asarray(player.buy_history)[:,0,:] 
 			buy_y = keras.utils.to_categorical(player.buy_history_win, 2)
 			self.buy_ai.fit(buy_x, buy_y, epochs = 10, batch_size = 100, verbose=0)
 
-		if len(player.steal_history) <> 0:
+		if len(player.steal_history) != 0:
 			steal_x = np.asarray(player.steal_history)[:,0,:] 
 			steal_y = keras.utils.to_categorical(player.steal_history_win, 2)
 			self.steal_ai.fit(steal_x, steal_y, epochs = 10, batch_size = 100, verbose=0)
@@ -143,7 +143,7 @@ class PlayerAI(object):
 						
 	def record_buy(self):
 		extra_input = np.zeros( (1,19) )
-		if self.player.buy_choice <> 19:
+		if self.player.buy_choice != 19:
 			extra_input[0,self.player.buy_choice] = 1
 		input = self.merge_input(extra_input)
 		if True:#not self.player.shared_ai:
