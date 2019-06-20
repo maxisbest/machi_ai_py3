@@ -94,6 +94,7 @@ class Player(object):
             self.game.game_record_file.write('ROLL: player %d rolls a %d %s with %d dice\n' % (self.order, self.roll_value, str(dice), self.roll))
 
     def update_win_history(self):
+
         self.dice_history_win += [self.win] * (len(self.dice_history) - len(self.dice_history_win))
         self.buy_history_win += [self.win] * (len(self.buy_history) - len(self.buy_history_win))
         self.swap_history_win += [self.win] * (len(self.swap_history) - len(self.swap_history_win))
@@ -325,6 +326,7 @@ class Player(object):
         self.victim = self.get_next_player(choice + 1)
         #index is used for self.AI.record_steal()
         self.victim_index = choice + 1
+        self.AI.record_steal()
 
     def decide_swap(self):
         self.create_swap_mask()
@@ -393,7 +395,6 @@ class Player(object):
         #decide from whom to steal
         if self.buildings['tv_station']:
             self.decide_steal()
-            self.AI.record_steal()
             theft_value = min(5, self.victim.coins)
             self.victim.coins -= theft_value
             self.coins += theft_value
