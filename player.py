@@ -52,6 +52,7 @@ class Player(object):
         self.coins = 3
         self.order = order
         self.shared_ai = False
+        self.victim_index = 1 # victiom of stealing, default is the next player.
         #name refers to model name
         self.name=name
         #this will not change between games
@@ -91,7 +92,6 @@ class Player(object):
         self.roll_value = sum(dice)
         if self.game.record_game:
             self.game.game_record_file.write('ROLL: player %d rolls a %d %s with %d dice\n' % (self.order, self.roll_value, str(dice), self.roll))
-
 
     def update_win_history(self):
         self.dice_history_win += [self.win] * (len(self.dice_history) - len(self.dice_history_win))
@@ -170,12 +170,19 @@ class Player(object):
         """
         make sure to call this before created a SharedAI object so that the new AIs are used for the non-base player
         """
-        if use_shared or self.shared_ai:
-            self.AI.dice_ai = load_model(self.name + '_dice_ai.h5')
-            self.AI.reroll_ai = load_model(self.name + '_reroll_ai.h5')
-            self.AI.steal_ai = load_model(self.name + '_steal_ai.h5')
-            self.AI.swap_ai = load_model(self.name + '_swap_ai.h5')
-            self.AI.buy_ai = load_model(self.name + '_buy_ai.h5')
+        if use_shared or self.shared_ai:  #if use_shared, just load modles.
+            self.AI.dice_ai = load_model('_dice_ai.h5')
+            self.AI.reroll_ai = load_model('_reroll_ai.h5')
+            self.AI.steal_ai = load_model('_steal_ai.h5')
+            self.AI.swap_ai = load_model('_swap_ai.h5')
+            self.AI.buy_ai = load_model('_buy_ai.h5')
+
+        # if use_shared or self.shared_ai:
+        #     self.AI.dice_ai = load_model(self.name + '_dice_ai.h5')
+        #     self.AI.reroll_ai = load_model(self.name + '_reroll_ai.h5')
+        #     self.AI.steal_ai = load_model(self.name + '_steal_ai.h5')
+        #     self.AI.swap_ai = load_model(self.name + '_swap_ai.h5')
+        #     self.AI.buy_ai = load_model(self.name + '_buy_ai.h5')
         else:
             self.AI.dice_ai = load_model(self.name + '_dice_ai_%d.h5' % self.id)
             self.AI.reroll_ai = load_model(self.name + '_reroll_ai_%d.h5' % self.id)
@@ -201,7 +208,6 @@ class Player(object):
             ai.buy_ai.save(self.name + '_buy_ai_%d.h5' % self.id)
         print('saved AI')
 
-
     def get_next_player(self, offset=1):
         return self.game.get_next_player(self, offset)
 
@@ -210,7 +216,16 @@ class Player(object):
         only the number of coins is represented as an integer"""
         building_vector = deepcopy(BUILDING_VECTOR_TEMPLATE)
         for i, building in enumerate(BUILDING_ORDER):
+
             building_vector[i][self.buildings[building]] = 1
+            """ for debugging
+            try:
+                building_vector[i][self.buildings[building]] = 1
+            except:
+                print(i, building)
+            """
+
+
         flat_vector = [x for sub in building_vector for x in sub]
         flat_vector.append(self.coins)
         return flat_vector
@@ -439,7 +454,6 @@ class Player(object):
             elif self.buildings[BUILDING_ORDER[i]] == player_limit[BUILDING_ORDER[i]]:
                 mask[i] = 0 # reached the limit, so zero.
         self.buy_mask = mask
-
 
     def check_if_win(self):
         buildings = self.buildings

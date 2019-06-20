@@ -9,127 +9,270 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/machikoro.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1140">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="e#60#70#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rnd_player.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1000">
-              <caret line="110" selection-start-line="110" selection-end-line="110" />
-              <folding>
-                <element signature="e#211#354#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/player.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-60">
-              <caret line="203" lean-forward="true" selection-start-line="203" selection-end-line="203" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-                <element signature="e#473#1296#0" />
-                <element signature="e#1374#2568#0" />
-                <element signature="e#3118#3615#0" />
-                <element signature="e#3664#3853#0" />
-                <element signature="e#3900#4688#0" />
-                <element signature="e#4746#6100#0" />
-                <element signature="e#6151#7118#0" />
-                <element signature="e#7151#7867#0" />
-                <element signature="e#7919#7965#0" />
-                <element signature="e#8005#8451#0" />
-                <element signature="e#8495#8697#0" />
-                <element signature="e#8732#10558#0" />
-                <element signature="e#10595#10902#0" />
-                <element signature="e#10941#11565#0" />
-                <element signature="e#11603#11917#0" />
-                <element signature="e#11954#12304#0" />
-                <element signature="e#12341#12512#0" />
-                <element signature="e#12553#14488#0" />
-                <element signature="e#14530#16943#0" />
-                <element signature="e#16987#17870#0" />
-                <element signature="e#17911#18358#0" />
-                <element signature="e#18397#18618#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/player_ai.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2400">
-              <caret line="165" column="8" lean-forward="true" selection-start-line="165" selection-start-column="8" selection-end-line="165" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-                <element signature="e#405#1741#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.47103274">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/player0_as_rnd.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="473">
+                  <caret line="91" column="36" lean-forward="true" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="36" />
+                  <folding>
+                    <element signature="e#52#73#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/constants.py">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/game.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="273">
+                  <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#484#608#0" />
+                    <element signature="e#533#608#0" />
+                    <element signature="e#1559#1652#0" />
+                    <element signature="e#1749#4358#0" />
+                    <element signature="e#1946#2446#0" />
+                    <element signature="e#2361#2446#0" />
+                    <element signature="e#2615#3248#0" />
+                    <element signature="e#2828#3146#0" />
+                    <element signature="e#3276#3338#0" />
+                    <element signature="e#3426#4335#0" />
+                    <element signature="e#3488#4335#0" />
+                    <element signature="e#4396#4449#0" />
+                    <element signature="e#4589#4637#0" />
+                    <element signature="e#4674#6176#0" />
+                    <element signature="e#4898#5495#0" />
+                    <element signature="e#4923#5495#0" />
+                    <element signature="e#5289#5495#0" />
+                    <element signature="e#5508#6165#0" />
+                    <element signature="e#5533#6165#0" />
+                    <element signature="e#5946#6165#0" />
+                    <element signature="e#6214#7984#0" />
+                    <element signature="e#6214#6256#1" />
+                    <element signature="e#6381#7972#0" />
+                    <element signature="e#6403#6709#0" />
+                    <element signature="e#6737#7019#0" />
+                    <element signature="e#7047#7332#0" />
+                    <element signature="e#7360#7644#0" />
+                    <element signature="e#7661#7972#0" />
+                    <element signature="e#8015#8063#0" />
+                    <element signature="e#8103#8331#0" />
+                    <element signature="e#8103#8186#1" />
+                    <element signature="e#8371#8634#0" />
+                    <element signature="e#8480#8593#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/machikoro.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="499">
+                  <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+                  <folding>
+                    <element signature="e#60#70#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/player_ai.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="171">
+                  <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+                  <folding>
+                    <element signature="e#405#1741#0" />
+                    <element signature="e#405#591#1" />
+                    <element signature="e#628#1741#0" />
+                    <element signature="e#628#932#1" />
+                    <element signature="e#1118#1315#0" />
+                    <element signature="e#3511#4927#0" />
+                    <element signature="e#3511#3635#1" />
+                    <element signature="e#3759#3975#0" />
+                    <element signature="e#4016#4209#0" />
+                    <element signature="e#4252#4459#0" />
+                    <element signature="e#4499#4685#0" />
+                    <element signature="e#4727#4927#0" />
+                    <element signature="e#5188#5312#0" />
+                    <element signature="e#5340#5688#0" />
+                    <element signature="e#5724#6283#0" />
+                    <element signature="e#6061#6166#0" />
+                    <element signature="e#6178#6283#0" />
+                    <element signature="e#6316#6720#0" />
+                    <element signature="e#6510#6609#0" />
+                    <element signature="e#6621#6720#0" />
+                    <element signature="e#6748#7122#0" />
+                    <element signature="e#6908#7009#0" />
+                    <element signature="e#7021#7122#0" />
+                    <element signature="e#7151#7530#0" />
+                    <element signature="e#7312#7415#0" />
+                    <element signature="e#7427#7530#0" />
+                    <element signature="e#7556#7773#0" />
+                    <element signature="e#8043#8241#0" />
+                    <element signature="e#8268#8424#0" />
+                    <element signature="e#8452#8876#0" />
+                    <element signature="e#8910#8984#1" />
+                    <element signature="e#9269#9433#1" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/rnd_player.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="160">
+                  <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+                  <folding>
+                    <element signature="e#211#354#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/player.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="215">
+                  <caret line="220" column="29" selection-start-line="220" selection-start-column="29" selection-end-line="220" selection-end-column="29" />
+                  <folding>
+                    <element signature="e#320#377#0" />
+                    <element signature="e#473#1296#0" />
+                    <element signature="e#552#972#0" />
+                    <element signature="e#649#814#0" />
+                    <element signature="e#992#1185#0" />
+                    <element signature="e#1374#1407#0" />
+                    <element signature="e#2746#3154#0" />
+                    <element signature="e#2895#2937#0" />
+                    <element signature="e#3198#3695#0" />
+                    <element signature="e#3744#3933#0" />
+                    <element signature="e#3980#4768#0" />
+                    <element signature="e#4205#4768#0" />
+                    <element signature="e#4826#6180#0" />
+                    <element signature="e#5467#6180#0" />
+                    <element signature="e#6231#7571#0" />
+                    <element signature="e#6231#6363#1" />
+                    <element signature="e#7148#7544#0" />
+                    <element signature="e#7604#8320#0" />
+                    <element signature="e#7963#8294#0" />
+                    <element signature="e#8371#8417#0" />
+                    <element signature="e#8947#9149#0" />
+                    <element signature="e#9184#11010#0" />
+                    <element signature="e#9985#10575#0" />
+                    <element signature="e#10241#10575#0" />
+                    <element signature="e#10381#10573#0" />
+                    <element signature="e#10812#10981#0" />
+                    <element signature="e#11047#11354#0" />
+                    <element signature="e#11094#11126#0" />
+                    <element signature="e#11393#12017#0" />
+                    <element signature="e#11393#11465#0" />
+                    <element signature="e#11565#11601#0" />
+                    <element signature="e#12055#12369#0" />
+                    <element signature="e#12055#12146#1" />
+                    <element signature="e#12406#12756#0" />
+                    <element signature="e#12792#12963#0" />
+                    <element signature="e#13004#15124#0" />
+                    <element signature="e#13462#13858#0" />
+                    <element signature="e#13927#14209#0" />
+                    <element signature="e#14277#14622#0" />
+                    <element signature="e#14770#15107#0" />
+                    <element signature="e#15166#17576#0" />
+                    <element signature="e#15308#15883#0" />
+                    <element signature="e#15345#15883#0" />
+                    <element signature="e#15630#15883#0" />
+                    <element signature="e#16237#16480#0" />
+                    <element signature="e#16580#17558#0" />
+                    <element signature="e#16611#16671#0" />
+                    <element signature="e#17618#18501#0" />
+                    <element signature="e#17618#17683#1" />
+                    <element signature="e#17692#17735#0" />
+                    <element signature="e#17940#18471#0" />
+                    <element signature="e#18100#18471#0" />
+                    <element signature="e#18155#18471#0" />
+                    <element signature="e#18542#19058#0" />
+                    <element signature="e#18672#19029#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>decide_stea</find>
+      <find>vict</find>
+      <find>game_record</find>
+      <find>shared_ai</find>
+      <find>record</find>
+      <find>history</find>
+      <find>record_steal</find>
+      <find>record_buy</find>
+      <find>initialize_player_ai</find>
+      <find>reset</find>
+      <find>except</find>
+    </findStrings>
+    <dirStrings>
+      <dir>C:\Users\maxyi\ai\machi_ai_py3</dir>
+    </dirStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/machikoro.py" />
-        <option value="$PROJECT_DIR$/player.py" />
-        <option value="$PROJECT_DIR$/rnd_player.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/simple_player_ai.py" />
+        <option value="$PROJECT_DIR$/simple_player.py" />
+        <option value="$PROJECT_DIR$/rnd_player.py" />
+        <option value="$PROJECT_DIR$/machikoro.py" />
+        <option value="$PROJECT_DIR$/battle_log.log" />
+        <option value="$PROJECT_DIR$/player_ai.py" />
+        <option value="$PROJECT_DIR$/game.py" />
+        <option value="$PROJECT_DIR$/player0_as_rnd.py" />
+        <option value="$PROJECT_DIR$/player.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="230" />
+    <option name="x" value="-2" />
     <option name="y" value="-1079" />
-    <option name="width" value="1688" />
-    <option name="height" value="1075" />
+    <option name="width" value="1922" />
+    <option name="height" value="1051" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="machi_ai_py3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machi_ai_py3" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -142,6 +285,34 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="player0_as_rnd" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="machi_ai_py3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/player0_as_rnd.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.player0_as_rnd" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -157,96 +328,277 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="230" y="-1079" width="1688" height="1075" extended-state="0" />
-    <editor active="true" />
+    <frame x="-2" y="-1079" width="1922" height="1051" extended-state="0" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17696969" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16454352" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3481953" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.4684096" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32087228" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3520249" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.50980395" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.26265824" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/player_ai.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2400">
-          <caret line="165" column="8" lean-forward="true" selection-start-line="165" selection-start-column="8" selection-end-line="165" selection-end-column="8" />
+        <state relative-caret-position="120">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple_player_ai.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="21" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
-            <element signature="e#405#1741#0" />
+            <element signature="e#2658#2662#0" />
+            <element signature="e#6176#6393#0" />
+            <element signature="e#6418#6637#0" />
+            <element signature="e#6663#6861#0" />
+            <element signature="e#6888#7044#0" />
+            <element signature="e#7072#7496#0" />
+            <element signature="e#7713#7855#0" />
+            <element signature="e#7889#8133#0" />
+            <element signature="e#8168#8289#0" />
+            <element signature="e#8325#8555#0" />
+            <element signature="e#8601#9109#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/player.py">
+    <entry file="file://$PROJECT_DIR$/simple_player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="203" lean-forward="true" selection-start-line="203" selection-end-line="203" />
+        <state relative-caret-position="199">
+          <caret line="81" column="11" lean-forward="true" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
             <element signature="e#473#1296#0" />
-            <element signature="e#1374#2568#0" />
-            <element signature="e#3118#3615#0" />
-            <element signature="e#3664#3853#0" />
-            <element signature="e#3900#4688#0" />
-            <element signature="e#4746#6100#0" />
-            <element signature="e#6151#7118#0" />
-            <element signature="e#7151#7867#0" />
-            <element signature="e#7919#7965#0" />
-            <element signature="e#8005#8451#0" />
-            <element signature="e#8495#8697#0" />
-            <element signature="e#8732#10558#0" />
-            <element signature="e#10595#10902#0" />
-            <element signature="e#10941#11565#0" />
-            <element signature="e#11603#11917#0" />
-            <element signature="e#11954#12304#0" />
-            <element signature="e#12341#12512#0" />
-            <element signature="e#12553#14488#0" />
-            <element signature="e#14530#16943#0" />
-            <element signature="e#16987#17870#0" />
-            <element signature="e#17911#18358#0" />
-            <element signature="e#18397#18618#0" />
+            <element signature="e#2107#2136#0" />
+            <element signature="e#2746#3154#0" />
+            <element signature="e#3305#3398#0" />
+            <element signature="e#3744#3933#0" />
+            <element signature="e#4826#6180#0" />
+            <element signature="e#5571#6850#0" />
+            <element signature="e#7604#8320#0" />
+            <element signature="e#11047#11354#0" />
+            <element signature="e#11393#12017#0" />
+            <element signature="e#12406#12756#0" />
+            <element signature="e#12792#12963#0" />
+            <element signature="e#13004#15124#0" />
+            <element signature="e#15166#17576#0" />
+            <element signature="e#17618#18501#0" />
+            <element signature="e#18542#19058#0" />
+            <element signature="e#19096#19317#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/machikoro.py">
+    <entry file="file://$USER_HOME$/envs/tfenv/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1140">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="437">
+          <caret line="331" column="31" lean-forward="true" selection-start-line="331" selection-start-column="31" selection-end-line="331" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battle_log.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/envs/tfenv/Lib/copy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="168" selection-start-line="168" selection-end-line="168" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/constants.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player_ai.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
           <folding>
-            <element signature="e#60#70#0" expanded="true" />
+            <element signature="e#405#1741#0" />
+            <element signature="e#405#591#1" />
+            <element signature="e#628#1741#0" />
+            <element signature="e#628#932#1" />
+            <element signature="e#1118#1315#0" />
+            <element signature="e#3511#4927#0" />
+            <element signature="e#3511#3635#1" />
+            <element signature="e#3759#3975#0" />
+            <element signature="e#4016#4209#0" />
+            <element signature="e#4252#4459#0" />
+            <element signature="e#4499#4685#0" />
+            <element signature="e#4727#4927#0" />
+            <element signature="e#5188#5312#0" />
+            <element signature="e#5340#5688#0" />
+            <element signature="e#5724#6283#0" />
+            <element signature="e#6061#6166#0" />
+            <element signature="e#6178#6283#0" />
+            <element signature="e#6316#6720#0" />
+            <element signature="e#6510#6609#0" />
+            <element signature="e#6621#6720#0" />
+            <element signature="e#6748#7122#0" />
+            <element signature="e#6908#7009#0" />
+            <element signature="e#7021#7122#0" />
+            <element signature="e#7151#7530#0" />
+            <element signature="e#7312#7415#0" />
+            <element signature="e#7427#7530#0" />
+            <element signature="e#7556#7773#0" />
+            <element signature="e#8043#8241#0" />
+            <element signature="e#8268#8424#0" />
+            <element signature="e#8452#8876#0" />
+            <element signature="e#8910#8984#1" />
+            <element signature="e#9269#9433#1" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rnd_player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1000">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        <state relative-caret-position="160">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#211#354#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/machikoro.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        <state relative-caret-position="499">
+          <caret line="46" column="39" lean-forward="true" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+          <folding>
+            <element signature="e#60#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player0_as_rnd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="91" column="36" lean-forward="true" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="36" />
+          <folding>
+            <element signature="e#52#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="220" column="29" selection-start-line="220" selection-start-column="29" selection-end-line="220" selection-end-column="29" />
+          <folding>
+            <element signature="e#320#377#0" />
+            <element signature="e#473#1296#0" />
+            <element signature="e#552#972#0" />
+            <element signature="e#649#814#0" />
+            <element signature="e#992#1185#0" />
+            <element signature="e#1374#1407#0" />
+            <element signature="e#2746#3154#0" />
+            <element signature="e#2895#2937#0" />
+            <element signature="e#3198#3695#0" />
+            <element signature="e#3744#3933#0" />
+            <element signature="e#3980#4768#0" />
+            <element signature="e#4205#4768#0" />
+            <element signature="e#4826#6180#0" />
+            <element signature="e#5467#6180#0" />
+            <element signature="e#6231#7571#0" />
+            <element signature="e#6231#6363#1" />
+            <element signature="e#7148#7544#0" />
+            <element signature="e#7604#8320#0" />
+            <element signature="e#7963#8294#0" />
+            <element signature="e#8371#8417#0" />
+            <element signature="e#8947#9149#0" />
+            <element signature="e#9184#11010#0" />
+            <element signature="e#9985#10575#0" />
+            <element signature="e#10241#10575#0" />
+            <element signature="e#10381#10573#0" />
+            <element signature="e#10812#10981#0" />
+            <element signature="e#11047#11354#0" />
+            <element signature="e#11094#11126#0" />
+            <element signature="e#11393#12017#0" />
+            <element signature="e#11393#11465#0" />
+            <element signature="e#11565#11601#0" />
+            <element signature="e#12055#12369#0" />
+            <element signature="e#12055#12146#1" />
+            <element signature="e#12406#12756#0" />
+            <element signature="e#12792#12963#0" />
+            <element signature="e#13004#15124#0" />
+            <element signature="e#13462#13858#0" />
+            <element signature="e#13927#14209#0" />
+            <element signature="e#14277#14622#0" />
+            <element signature="e#14770#15107#0" />
+            <element signature="e#15166#17576#0" />
+            <element signature="e#15308#15883#0" />
+            <element signature="e#15345#15883#0" />
+            <element signature="e#15630#15883#0" />
+            <element signature="e#16237#16480#0" />
+            <element signature="e#16580#17558#0" />
+            <element signature="e#16611#16671#0" />
+            <element signature="e#17618#18501#0" />
+            <element signature="e#17618#17683#1" />
+            <element signature="e#17692#17735#0" />
+            <element signature="e#17940#18471#0" />
+            <element signature="e#18100#18471#0" />
+            <element signature="e#18155#18471#0" />
+            <element signature="e#18542#19058#0" />
+            <element signature="e#18672#19029#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="29" column="13" lean-forward="true" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+          <folding>
+            <element signature="e#484#608#0" />
+            <element signature="e#533#608#0" />
+            <element signature="e#1559#1652#0" />
+            <element signature="e#1749#4358#0" />
+            <element signature="e#1946#2446#0" />
+            <element signature="e#2361#2446#0" />
+            <element signature="e#2615#3248#0" />
+            <element signature="e#2828#3146#0" />
+            <element signature="e#3276#3338#0" />
+            <element signature="e#3426#4335#0" />
+            <element signature="e#3488#4335#0" />
+            <element signature="e#4396#4449#0" />
+            <element signature="e#4589#4637#0" />
+            <element signature="e#4674#6176#0" />
+            <element signature="e#4898#5495#0" />
+            <element signature="e#4923#5495#0" />
+            <element signature="e#5289#5495#0" />
+            <element signature="e#5508#6165#0" />
+            <element signature="e#5533#6165#0" />
+            <element signature="e#5946#6165#0" />
+            <element signature="e#6214#7984#0" />
+            <element signature="e#6214#6256#1" />
+            <element signature="e#6381#7972#0" />
+            <element signature="e#6403#6709#0" />
+            <element signature="e#6737#7019#0" />
+            <element signature="e#7047#7332#0" />
+            <element signature="e#7360#7644#0" />
+            <element signature="e#7661#7972#0" />
+            <element signature="e#8015#8063#0" />
+            <element signature="e#8103#8331#0" />
+            <element signature="e#8103#8186#1" />
+            <element signature="e#8371#8634#0" />
+            <element signature="e#8480#8593#0" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -85,9 +85,10 @@ if __name__=='__main__':
               'prob_mod':getattr(args,'prob_mod')}
 
     # machikoro.py will be run in Pycharm GUI(right-click script in the editor, and choose "run"), so you need to set some kwargs mannually according to your need.
-    kwargs['use_max_probability'] = True
-    kwargs['load'] = False
-
+    kwargs['use_max_probability'] = True  #AI使用optimal策略
+    kwargs['load'] = False  #训练的时候, 不要load
+    kwargs['shared_ai'] = True #训练的时候, player共享神经网络
+    kwargs['g_shuffle'] = True  #训练的时候, 每次新开一个game就打乱顺序
     print(kwargs)
 
     main(**kwargs)

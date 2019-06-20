@@ -11,6 +11,7 @@ from random import randint
 from random import choice
 from functools import reduce
 from player import Player
+from simple_player_ai import SimpPlayerAI
 from player_ai import PlayerAI  #need this class to record data.
 
 class RndPlayer(Player):
@@ -18,7 +19,10 @@ class RndPlayer(Player):
         Player.__init__(self, game, order, name)
         #self.AI = None
         #self.shared_ai = False
+        self.AI = SimpPlayerAI(self)
         self.coins = coins
+        self.victim_index = 1 # default victiom is the next player
+        self.dice =1
 
     def roll_dice(self):
         ''' get the vale of dice(s), self.roll_value '''
